@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of J. Martin Vaishali, Software Developer and Freelancer">
+    <title>J. Martin Vaishali - Portfolio</title>
+
+    <!-- External Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: #fff;
+        }
+
+        /* Section Spacing */
+        section {
+            scroll-margin-top: 70px; /* Adjust for fixed navbar height */
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        /* Buttons */
+        .btn-custom {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #764ba2;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #5a3a8b;
+            color: #fff;
+        }
+
+        /* Skills Card */
+        .skills-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Project Cards */
+        .project-card {
+            background-color: #f8f9fa;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card .p-3 {
+            padding: 1.5rem;
+        }
+
+        /* Contact Info */
+        .contact-info p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="#hero" class="navbar-brand">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Hi, I'm J. Martin Vaishali</h1>
+            <p>Software Developer | Freelancer | Data Analytics Enthusiast</p>
+            <a href="#about" class="btn-custom">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+            I'm J. Martin Vaishali, an MCA student passionate about data analytics and software development. I specialize in data analysis, machine learning, and creating efficient, user-friendly web applications. My goal is to contribute to data-driven decision-making through innovative data solutions. Currently, I'm seeking opportunities in Data Analytics to apply my skills and grow in a dynamic, challenging environment. I strive to deliver high-quality solutions that drive business success and make impactful contributions.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skills-card" data-aos="zoom-in" data-aos-delay="200">
+                        <h5>Data Analytics</h5>
+                        <p>Data analysis, data visualization, statistical modeling, machine learning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card" data-aos="zoom-in" data-aos-delay="400">
+                        <h5>Frontend Development</h5>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card" data-aos="zoom-in" data-aos-delay="600">
+                        <h5>Backend Development</h5>
+                        <p>Python, SQL, PHP, MYSQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="section-title" data-aos="fade-up">My Achievements</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="project1.jpg" alt="Billing Automation" class="img-fluid">
+                    <div class="p-3">
+                        <h5>Billing Automation (Addin Company)</h5>
+                        <p>Streamlined invoicing for small businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="project2.jpg" alt="Vehicle Management" class="img-fluid">
+                    <div class="p-3">
+                        <h5>Vehicle Management (Jenish Egg Factory)</h5>
+                        <p>Efficient fleet operations management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="project3.jpg" alt="Membership Portal" class="img-fluid">
+                    <div class="p-3">
+                        <h5>Membership Portal (YWCA NGO)</h5>
+                        <p>Enhanced member management and event participation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact</h2>
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                <p>Email: <a href="mailto:martinvishalidev23@gmail.com">martinvishalidev23@gmail.com</a></p>
+                <p>Phone: <a href="tel:+917539930626">+91 7539930626</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 J. Martin Vaishali | All Rights Reserved</p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
